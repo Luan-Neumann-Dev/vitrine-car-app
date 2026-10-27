@@ -2,19 +2,19 @@
 
 > A used-car dealership catalog that runs entirely on Cloudflare's free tier — server-rendered listings, WhatsApp-first contact, and a self-service admin panel where the seller publishes a car in under a minute.
 
-![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-Workers%20%C2%B7%20D1%20%C2%B7%20R2-F38020?logo=cloudflare&logoColor=white)
-![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-C5F74F?logo=drizzle&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Next.js](https://img.shields.io/badge/Next.js%2016-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle%20ORM-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS%204-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
 <div align="center">
 
-![Vitrine Carros](https://github.com/user-attachments/assets/c0714b4f-49bc-4987-897f-cb729c2df1cf)
-![Vitrine Carros](https://github.com/user-attachments/assets/66a35f47-c432-49a7-a102-9530e077e744)
+![Vitrine Carros — public catalog](https://github.com/user-attachments/assets/c0714b4f-49bc-4987-897f-cb729c2df1cf)
+![Vitrine Carros — listing page](https://github.com/user-attachments/assets/66a35f47-c432-49a7-a102-9530e077e744)
 
-**[🚀 Live Demo](https://vitrine-carros.lnneumann.workers.dev/) · [📖 Setup Guide](STARTUP.md) · [🐛 Report a Bug](https://github.com/Luan-Neumann-Dev/VitrineCar/issues)**
+**[🚀 Live Demo](https://vitrine-carros.lnneumann.workers.dev/) · [📖 Setup Guide](STARTUP.md) · [🐛 Report a Bug](https://github.com/Luan-Neumann-Dev/vitrine-car-app/issues)**
 
 </div>
 
@@ -35,7 +35,7 @@
 - [What I Learned](#-what-i-learned)
 - [Roadmap](#️-roadmap)
 - [License](#-license)
-- [Contact](#-contact)
+- [Author](#-author)
 
 ## 🎯 About The Project
 
@@ -136,8 +136,8 @@ code in the repository, and they are documented in
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Luan-Neumann-Dev/VitrineCar.git
-cd VitrineCar
+git clone https://github.com/Luan-Neumann-Dev/vitrine-car-app.git
+cd vitrine-car-app
 
 # 2. Install dependencies
 pnpm install
@@ -148,7 +148,7 @@ printf 'ADMIN_PASSWORD="local-dev-password"\nADMIN_SESSION_SECRET="local-dev-sec
 # 4. Generate the Cloudflare binding types
 pnpm cf:typegen
 
-# 5. Create the local D1 database and seed 12 demo vehicles
+# 5. Create the local D1 database and seed 14 demo vehicles
 pnpm db:reset:local
 
 # 6. Run it
@@ -197,7 +197,7 @@ pnpm cf:deploy
 ## 📁 Project Structure
 
 ```
-VitrineCar/
+vitrine-car-app/
 ├── src/
 │   ├── app/
 │   │   ├── page.tsx                # Catalog (server-rendered, filter-aware)
@@ -217,7 +217,7 @@ VitrineCar/
 │   ├── db/
 │   │   ├── schema.ts               # Drizzle schema (source of truth)
 │   │   ├── queries.ts              # Every read and write against D1
-│   │   └── seed-data.ts            # 12 demo vehicles
+│   │   └── seed-data.ts            # 14 demo vehicles (12 cars, 2 motorcycles)
 │   │
 │   ├── lib/
 │   │   ├── auth.ts                 # JWT session, constant-time compare, lockout
@@ -591,7 +591,7 @@ outgrows it.
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
-## 👤 Contact
+## 👤 Author
 
 **Luan Henrique Neumann**
 
